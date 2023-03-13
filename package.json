@@ -7,9 +7,9 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "tslint --fix 'src/*.ts'",
     "clasp": "clasp $@",
-    "push": "clasp push",
     "open": "clasp open",
-    "clone": "clasp clone $1 --rootDir $2"
+    "push": "clasp push",
+    "pull": "clasp pull"
   },
   "keywords": [],
   "author": "",

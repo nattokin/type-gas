@@ -42,7 +42,7 @@ https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%
 [local project_name]$ npm run clasp create -- --title $(basename $(pwd)) --type standalone --rootDir src/
 ```
 
-## その他開発コマンド
+## 開発コマンド
 
 ### コード整形
 
@@ -50,42 +50,34 @@ https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%
 [local project_name]$ npm run lint
 ```
 
-
-### create
+### プロジェクト作成
 
 ```
-[local project_name]$ npm run create  -- --title [project title] --type [project tyoe] --rootDir src/
+[local project_name]$ npm run clasp create  -- --title [project title] --type [project tyoe] --rootDir src/
 ```
 
-### clone
+### プロジェクトのclone
 
 ```
 [local project_name]$ npm run clasp clone [project] -- --rootDir src/
 ```
 
-### open
+### スクリプトエディタをブラウザで開く
 
 ```
 [local project_name]$ npm run open
 ```
 
-### push
+### コードをpush
 
 ```
 [local project_name]$ npm run push
 ```
 
-### pull
+### コードをpull
 
 ```
 [local project_name]$ npm run pull
-```
-
-### スクリプトエディタを開く
-
-```
-[local ~]$ cd path/to/type-gas/{{project_name}}
-[local project_name]$ npm run open
 ```
 
 ### その他claspコマンドの実行

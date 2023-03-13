@@ -1,2 +1,12 @@
-node_modules/*
-!node_modules/.gitkeep
+*
+
+!/template/node_module
+!/template/src/.gitkeep
+!/template/.claspignore
+!/template/README.md
+!/template/tslint.json
+
+!/node_modules/.gitkeep
+!/pacage*.json
+!/README.md
+!/tslint.json

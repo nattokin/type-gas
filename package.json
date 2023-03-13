@@ -8,7 +8,8 @@
     "lint": "tslint --fix 'src/*.ts'",
     "clasp": "clasp $@",
     "push": "clasp push",
-    "open": "clasp open"
+    "open": "clasp open",
+    "clone": "clasp clone $1 --rootDir $2"
   },
   "keywords": [],
   "author": "",

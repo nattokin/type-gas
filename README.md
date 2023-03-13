@@ -36,9 +36,10 @@ https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%
 ```
 [local ~]$ cd path/to/type-gas
 ## シンボリックリンクのまま複製
-[local gas]$ cp -R template {{project_name}}
+[local gas]$ cp -R template [project_name]
+[local gas]$ cd [project_name]
 ## GASプロジェクト作成
-[local project_name]$ npm run clasp create --title $(basename $(pwd)) --type standalone --rootDir ./src
+[local project_name]$ npm run clasp create -- --title $(basename $(pwd)) --type standalone --rootDir src/
 ```
 
 ## その他開発コマンド
@@ -46,17 +47,38 @@ https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%
 ### コード整形
 
 ```
-[local ~]$ cd path/to/type-gas/{{project_name}}
 [local project_name]$ npm run lint
+```
+
+
+### create
+
+```
+[local project_name]$ npm run create  -- --title [project title] --type [project tyoe] --rootDir src/
+```
+
+### clone
+
+```
+[local project_name]$ npm run clasp clone [project] -- --rootDir src/
+```
+
+### open
+
+```
+[local project_name]$ npm run open
 ```
 
 ### push
 
 ```
-[local ~]$ cd path/to/type-gas/{{project_name}}
 [local project_name]$ npm run push
-## 以下でも可能
-[local project_name]$ npm run clasp push
+```
+
+### pull
+
+```
+[local project_name]$ npm run pull
 ```
 
 ### スクリプトエディタを開く
@@ -69,6 +91,7 @@ https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%
 ### その他claspコマンドの実行
 
 ```
-[local ~]$ cd path/to/type-gas/{{project_name}}
-[local project_name]$ npm run clasp xxx
+[local project_name]$ npm run clasp comand_name xxx
+# --option 形式のオプション付きの場合
+[local project_name]$ npm run clasp comand_name xxx -- --option_a yyy --option_b zzz
 ```

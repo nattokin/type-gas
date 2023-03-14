@@ -39,6 +39,9 @@ https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%
 [local gas]$ cp -R template [project_name]
 [local gas]$ cd [project_name]
 ## GASプロジェクト作成
+### 通常
+[local project_name]$ npm run clasp create -- --title $(basename $(pwd)) --type standalone --rootDir src/
+### スプレッドシート
 [local project_name]$ npm run clasp create -- --title $(basename $(pwd)) --type standalone --rootDir src/
 ```
 
